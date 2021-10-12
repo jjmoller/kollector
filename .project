@@ -5,6 +5,8 @@
 	<projects>
 	</projects>
 	<buildSpec>
+		
+		Testing!!!!!!!!!!!!!!
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
