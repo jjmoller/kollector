@@ -15,10 +15,10 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" >
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img th:src="@{/images/logo.png}"  src="../static/images/logo.png" width="auto" height="40" class="d-inline-block align-top" alt=""/>
+            <img th:src="@{/images/logo.png}"  src="../static/images/logo.png" width="auto" height="80" class="d-inline-block align-top" alt=""/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,22 +28,22 @@
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/}" href="#">home</a>
+                    <a class="nav-link" th:href="@{/}" href="#" style="color: #FFFFFF">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/shop}" href="#">shop</a>
+                    <a class="nav-link" th:href="@{/shop}" href="#" style="color: #FFFFFF">Catalogue</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#">login</a>
+                    <a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/login}" href="#" style="color: #FFFFFF">Login</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#">logout</a>
+                    <a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/logout}" href="#" style="color: #FFFFFF">Logout</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" th:href="@{/cart}" href="#">cart</a>
+                    <a class="nav-link" th:href="@{/cart}" href="#" style="color: #FFFFFF">Cart</a>
                 </li>
                 <li class="nav-item active">
-                    <span class="nav-link" th:text="${cartCount}">0</span>
+                    <span class="nav-link" th:text="${cartCount}" style="color: #FFFFFF">0</span>
                 </li>
             </ul>
 
@@ -96,17 +96,6 @@
 
                         </div>
                         <!-- Grid row -->
-
-
-
-                        <!-- Country -->
-                        <div class="d-flex flex-wrap">
-                            <div class="select-outline position-relative w-100">
-                                <label>Country - <strong>INDIA</strong></label>
-
-
-                            </div>
-                        </div>
 
                         <!-- Address Part 1 -->
                         <div class="md-form md-outline mt-2">
@@ -195,8 +184,12 @@
 
 </div>
 
-
-
+<div class=" fixed-bottom" style="background-color: #343a40"  >
+    <p style="color: white;"></p>
+    <div class="footer-copyright text-center py-3" style="color: white;">© 2021 Copyright:
+        <a href="https://Kollector.com"> Kollector.com</a>
+    </div>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
