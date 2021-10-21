@@ -55,31 +55,22 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-sm-5 d-flex justify-content-center">
-            <img class="mt-5" height="auto" width="200px" src="" th:src="@{${'/productImages/' + product.image_url}}"
+            <img class="mt-5" height="auto" width="220" src="" th:src="@{${'/productImages/' + product.image_url}}"
                  alt="">
         </div>
         <div class="col-sm-7 mt-5">
             <h2 th:text="${product.card_name}"></h2>
             <p th:text="${product.category.name}"></p>
-            <h5>Multiverse ID:
-                <span th:text="${product.multiverse_id}"></span> <i>(copy this number if selling)</i></h5>
-            <!--<h3>$ <span th:text="${product.usd_price}"></span></h3>-->
-            <h5>Rarity:
-                <span th:text="${product.rarity}"></span>
-                <h5>Artist:
-                    <span th:text="${product.artist}"></span>
-                </h5>
-                <h5>Set:
-                    <span th:text="${product.set}"></span>
-                </h5>
-            </h5>
-            <p>Description:
-                <span th:text="${product.description}"></span></p>
+            <p class="mb-3 extra-large"><strong>Multiverse ID : </strong><span th:text="${product.multiverse_id}"></span></p>
+            <p class="mb-3 large"><strong>Rarity : </strong><span th:text="${product.rarity}"></span></p>
+            <p class="mb-3 large"><strong>Set : </strong><span th:text="${product.set}"></span></p>
+            <p class="mb-3 large"><strong>Artist : </strong><span th:text="${product.artist}"></span></p>
+            <p class="mb-3 medium"><strong>Description : </strong><span th:text="${product.description}"></span></p>
+            <br>
             <a href="" th:href="@{/productsSell}" class="btn btn-primary">Sell a card</a>
         </div>
     </div>
 </div>
-
 
 <div class=" fixed-bottom" style="background-color: #343a40"  >
     <p style="color: white;"></p>
@@ -87,6 +78,7 @@
         <a href="https://Kollector.com"> Kollector.com</a>
     </div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -98,4 +90,5 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
