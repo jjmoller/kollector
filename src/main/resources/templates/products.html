@@ -35,11 +35,10 @@
         </div>
     </div>
 </nav>
-<div class="container-fluid ">
+<div class="container-fluid">
 
     <a th:href="@{/admin/products/add}" style="margin: 20px 0" class="btn btn-primary">Add Card</a>
     <table class="table">
-
         <thead class="thead-light">
         <tr>
             <th scope="col">SN</th>
@@ -53,28 +52,28 @@
         <tbody>
 
         <tr th:each="product, iStat : ${products}">
-            <th scope="row" th:text="${iStat.index + 1}"></th>
-            <td th:text="${product.card_name}"></td>
-            <td th:text="${product.category.name}"></td>
-            <td><img src="" height="200px" width="200px"  th:src="@{${'productImages/' + product.image_url}}"></td>
+            <th scope="row" th:text="${iStat.index + 1}">1</th>
+            <td th:text="${product.card_name}">Larry</td>
+            <td th:text="${product.category.name}">Larry</td>
+            <td><img src="" height="auto" width="100px"  th:src="@{${'/productImages/' + product.image_url}}"></td>
 
             <td><a href="" th:href="@{/admin/product/delete/{id}(id=${product.id})}" class="btn btn-danger">Delete</a></td>
-            <td><a href="" th:href="@{/admin/product/update/{id}(id=${product.id})}" class="btn btn-success">Update</a></td>
+            <td><a href="" th:href="@{/admin/product/update/{id}(id=${product.id})}" class="btn btn-warning">Update</a></td>
 
         </tr>
         </tbody>
     </table>
 </div>
-<div class=" fixed-bottom" style="background-color: #343a40"  >
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+<div class=" footer" style="background-color: #343a40"  >
     <p style="color: white;"></p>
     <div class="footer-copyright text-center py-3" style="color: white;">© 2021 Copyright:
         <a href="https://Kollector.com"> Kollector.com</a>
     </div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+</div>
 </html>
