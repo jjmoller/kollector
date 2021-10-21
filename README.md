@@ -1,5 +1,5 @@
-# Kollector
-## An online store for the resale of collectible trading card game cards (BETA)
+# Kollector (BETA)
+## An online store for the resale of collectible trading card game cards 
 
 The application should be run as a Spring-boot Maven project in your chosen IDE.
 
