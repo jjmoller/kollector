@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+//Service class for requests handling
+
 @Service
 public class CustomUserDetailService implements UserDetailsService {
     @Autowired
