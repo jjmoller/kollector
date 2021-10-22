@@ -20,6 +20,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+//Google sign-in and authentication. Autowired to the role and user repositories to fetch and right from and to the H2 database repository.
+
 @Component
 public class GoogleOAuth2SuccessHandler implements AuthenticationSuccessHandler {
     @Autowired
