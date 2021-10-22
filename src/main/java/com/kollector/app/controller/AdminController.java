@@ -19,7 +19,7 @@ import java.util.Optional;
 
 //Controller class for admin and admin screens.
 //Various methods relating to admin including url mappings.
-//Methods for getting and posting categories and cards to database
+//Methods for handling HTTP post and get requests with the provided URI expression.
 
 @Controller
 public class AdminController {
