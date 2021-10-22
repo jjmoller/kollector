@@ -10,6 +10,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+
+//Controller class for the home/ index screen.
+//Various methods for for handling requests to various screens.
+
 @Controller
 public class HomeController {
     @Autowired
