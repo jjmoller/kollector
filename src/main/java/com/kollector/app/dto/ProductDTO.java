@@ -2,6 +2,8 @@ package com.kollector.app.dto;
 
 import lombok.Data;
 
+// The ProductDTO class is the data transfer object. 
+
 @Data
 public class ProductDTO {
     private Long id;
