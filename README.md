@@ -17,3 +17,9 @@ To use the application you will have to log in. You may sign up with your email 
 Enjoy!
 
 ### If any major problems persist, please contact any of the contributors on this project.
+
+
+Created by: 
+            JJ Moller
+            Franco Anderson
+            Jurgen Saunders
