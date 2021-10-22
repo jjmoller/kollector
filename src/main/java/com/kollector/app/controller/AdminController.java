@@ -17,6 +17,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Optional;
 
+//Controller classes for admin.
+//Various methods relating to the admin user including url mappings.
+//Methods for getting and posting categories and cards to database
+
 @Controller
 public class AdminController {
     public static String uploadDir = System.getProperty("user.dir")+"/src/main/resources/static/productImages";
