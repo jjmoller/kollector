@@ -10,7 +10,7 @@ To do so, you might need to add support in your IDE for:
 2. Thymeleaf
 
 Remember to reload the dependencies before you first build the application. 
-Relaoding dependencies and waiting for them to install is crucial. 
+Reloading dependencies and waiting for them to install is crucial. 
 
 To use the application you will have to log in. You may sign up with your email address or your Gmail account. The latter does not require you to create a password.
 
