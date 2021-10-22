@@ -17,6 +17,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Optional;
 
+//Controller class for seller page
+//Methods similar to the admim controller.
+
 @Controller
 public class SellerController {
     public static String uploadDir = System.getProperty("user.dir")+"/src/main/resources/static/productImages";
