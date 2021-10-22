@@ -19,6 +19,7 @@ import java.util.Optional;
 
 //Controller class for seller page
 //Methods similar to the admim controller.
+//Methods for handling HTTP post and get requests with the provided URI expression.
 
 @Controller
 public class SellerController {
