@@ -17,8 +17,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Optional;
 
-//Controller classes for admin.
-//Various methods relating to the admin user including url mappings.
+//Controller class for admin and admin screens.
+//Various methods relating to admin including url mappings.
 //Methods for getting and posting categories and cards to database
 
 @Controller
