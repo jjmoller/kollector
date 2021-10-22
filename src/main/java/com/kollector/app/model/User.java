@@ -7,6 +7,8 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
+// This class represents domain-specific data and business logic in the model view controller. Also indicates data about the users specific attributes.
+
 @Entity
 @Data
 @Table(name = "users")
