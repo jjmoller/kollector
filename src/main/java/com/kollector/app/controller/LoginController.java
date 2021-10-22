@@ -17,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
+
+//Controller class for Login page and register pages
+
 @Controller
 public class LoginController {
     @Autowired
