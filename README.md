@@ -23,3 +23,5 @@ Created by:
             JJ Moller
             Franco Anderson
             Jurgen Saunders
+            
+Copyright © 2021
